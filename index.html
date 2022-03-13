@@ -9,111 +9,12 @@
 </head>
 
 <body translate="no" >
-  <div class="regina">
-    <div id="output" class="time"></div>
-    <div>
-      <span class="weather">
-        <span class="temp_container" width="100" height="80">
-          <a id="temp" class="temp"></a>
-          <a id="feel" class="feel"></a>
-        </span>
-        <span class="wind_container" width="250">
-          <a id="wind" class="wind"></a>
-          <a id="gust" class="gust"></a>
-          <a id="wdir" class="wdir"></a>
-        </span>
-      </span>
-    </div>
+  <div class="header">
+    <h1>n3on_n3rd</h1>
   </div>
-  <div class="melbourne">
-    <div id="a_output" class="time"></div>
-    <div>
-      <span class="weather">
-        <span class="a_temp_container" width="100" height="80">
-          <a id="a_temp" class="temp"></a>
-          <a id="a_feel" class="feel"></a>
-        </span>
-        <span class="wind_container" width="250">
-          <a id="a_wind" class="wind"></a>
-          <a id="a_gust" class="gust"></a>
-          <a id="a_wdir" class="wdir"></a>
-        </span>
-      </span>
-    </div>
+  <div class="pages">
+    <h2>Coming soon!</h2>
   </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
-  <script src="ignore.js"></script>
-  <script>
-// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
-var urlParams;
-(function () {
-    var match,
-        pl     = /\+/g,  // Regex for replacing addition symbol with a space
-        search = /([^&=]+)=?([^&]*)/g,
-        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-        query  = window.location.search.substring(1);
-
-    urlParams = {};
-    while (match = search.exec(query))
-       urlParams[decode(match[1])] = decode(match[2]);
-})();
-
-var output = document.getElementById("output");
-if (urlParams["style"]) output.setAttribute("style", urlParams["style"]);
-if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
-
-var c;
-setInterval(
-c = function() {
-    output.innerText = moment().format(urlParams["format"] || '');
-    a_output.innerText = moment().format(urlParams["format"] || '');
-}, 1000);
-c();
-var d;
-setInterval(
-d = function () {
-    let request = new XMLHttpRequest();
-    request.open("GET", il.ig1);
-    request.send();
-    request.onload = () => {
-        //console.log(request);
-        if (request.status === 200) {
-            //console.log(JSON.parse(request.responseText));
-            const result = JSON.parse(request.responseText);
-            document.getElementById("temp").innerHTML = (`${Math.round(result.current.temp_c)}°C`);
-            document.getElementById("feel").innerHTML = (`${Math.round(result.current.feelslike_c)}°C`);
-            document.getElementById("wind").innerHTML = (`Wind: ${Math.round(result.current.wind_kph)}`);
-            document.getElementById("gust").innerHTML = (`-${Math.round(result.current.gust_kph)}kmph`);
-            document.getElementById("wdir").innerHTML = (result.current.wind_dir);
-        } else {
-            console.log(`error ${request.status} ${request.statusText}`);
-        }
-    }
-    let a_request = new XMLHttpRequest();
-    a_request.open("GET", il.ig2);
-    a_request.send();
-    a_request.onload = () => {
-        //console.log(request);
-        if (a_request.status === 200) {
-            //console.log(JSON.parse(request.responseText));
-            const a_result = JSON.parse(a_request.responseText);
-            document.getElementById("a_temp").innerHTML = (`${Math.round(a_result.current.temp_c)}°C`);
-            document.getElementById("a_feel").innerHTML = (`${Math.round(a_result.current.feelslike_c)}°C`);
-            document.getElementById("a_wind").innerHTML = (`Wind: ${Math.round(a_result.current.wind_kph)}`);
-            document.getElementById("a_gust").innerHTML = (`-${Math.round(a_result.current.gust_kph)}kmph`);
-            document.getElementById("a_wdir").innerHTML = (a_result.current.wind_dir);
-        } else {
-            console.log(`error ${a_request.status} ${a_request.statusText}`);
-        }
-    }
-    console.log("refreshed")
-}, 100000);
-d();
-  </script>
-  <script src="weather.js"></script>
-  <script type="text/javascript">
-
-  </script>
 </body>
 
 </html>
