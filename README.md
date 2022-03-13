@@ -1,8 +1,10 @@
 ## How'd you get here??
 
-#### Go away.
-
 <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
 <img src="https://i.giphy.com/media/YSeWtruZU3jS5dnRfh/giphy.webp" width="100%">
 </img>
 </div>
+
+<p style="text-align:center;">
+#### Go away.
+</p>
