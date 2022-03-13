@@ -3,6 +3,6 @@
 #### Go away.
 
 <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
-<img src="https://i.giphy.com/media/YSeWtruZU3jS5dnRfh/giphy.webp" href="https://giphy.com/gifs/reaction-mood-YSeWtruZU3jS5dnRfh" width="100%">
+<img src="https://i.giphy.com/media/YSeWtruZU3jS5dnRfh/giphy.webp" width="100%">
 </img>
 </div>
