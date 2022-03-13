@@ -5,4 +5,4 @@
 </img>
 </div>
 
-<a style="width:100%;text-align:center;font-size:15px;">Go away.</a>
+### Go away.
