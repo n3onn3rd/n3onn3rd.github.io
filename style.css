@@ -1,0 +1,45 @@
+body {
+    color: rgba(64, 128, 32, 1);
+    background-color: rgba(0, 0, 0, 0);
+    height: 70px;
+}
+
+.regina {
+    justify-self: center;
+}
+
+
+.time {
+    font-weight: bold;
+    font-size: 42px;
+    font-family: monospace;
+    justify-self: center;
+}
+
+.temp {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+.feel {
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+.wind {
+    font-size: 18px;
+    font-family: Verdana;
+    padding-left: 50px;
+}
+
+.gust {
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+.wdir {
+    font-size: 22px;
+    font-family: Verdana;
+    text-align-last: right;
+    padding-left: 30px;
+}
