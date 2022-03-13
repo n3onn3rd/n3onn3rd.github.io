@@ -5,6 +5,6 @@
 </img>
 </div>
 
-<p style="text-align:center;">
+<a style="width:100%;text-align:center;">
 #### Go away.
-</p>
+</a>
