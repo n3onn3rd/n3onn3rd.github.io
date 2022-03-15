@@ -47,22 +47,28 @@ footer {
   position: relative;
   top: 0;
   left: 0;
-  padding: 10;
   text-align: center;
   vertical-align: auto;
   width: auto;
-  font-weight: bolder;
+  font-weight: bold;
   color: #eee;
-  font-size: 14px;
+  font-size: 15px;
 }
 #n3tag {
   position: relative;
   top: 0;
   left: 0;
-  padding: 10;
   text-align: center;
+  vertical-align: auto;
   width: auto;
-  font-weight: bolder;
-  color: #eee;
-  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+  font-size: 12px;
+}
+#namecon {
+  position: fixed;
+  top: 0;
+  left: calc(50px - (25px - 0.5em));
+  height: 1em;
+  padding: calc(25px - 0.5em);
 }
