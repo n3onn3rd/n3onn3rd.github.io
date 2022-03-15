@@ -59,9 +59,13 @@ footer {
   width: auto;
 }
 #hrcon {
-  padding: 5px;
-  height: 53px;
-  width: 80px;
+  position: static;
+  top: 0;
+  right: 0;
+  padding: calc((53px - 32px) / 2);
+  height: 32px;
+  width: auto;
+  position: fixed;
 }
 #n3icon {
   padding-right: 3px;
@@ -99,4 +103,20 @@ footer {
   width: 5em;
   height: 2em;
   padding: calc(25.5px - 1em);
+}
+#btn1 {
+  border: none;
+  background-color: #292B2F;
+  color: #b9bbbe;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+#btn1:hover {
+  background-color: #292B2F;
+  color: #dcddde;
 }
