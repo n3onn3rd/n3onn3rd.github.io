@@ -38278,7 +38278,8 @@ a.u-link.u-text-hover-grey-90:hover {
         line-height: 1.6;
         list-icon-spacing: 0.3;
         list-icon-size: 0.8;
-        font-family: whitneysemibold;
+        font-family: whitney;
+        font-weight: 600;
         }
         .u-btn
         {
@@ -38521,7 +38522,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-text-1 {
-  font-family: whitneysemibold;
+  font-family: whitney;
+  font-weight: 600;
   line-height: 1;
   font-size: 1rem;
   margin: 1px 0 0;
@@ -38529,7 +38531,8 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-text-2 {
   line-height: 1;
-  font-family: whitneybook;
+  font-family: whitney;
+  font-weight: 300;
   font-size: 0.875rem;
   margin: 0;
 }
@@ -38634,7 +38637,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-text-1 {
-  font-family: whitneybook;
+  font-family: whitney;
+  font-weight: 300;
   background-image: none;
   margin: 8px auto 20px calc(((100% - 1140px) / 2) + 422px);
 }
