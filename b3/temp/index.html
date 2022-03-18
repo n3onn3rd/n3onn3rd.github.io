@@ -12,6 +12,35 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.6.5, nicepage.com">
+    <script type="text/javascript">var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+	
+	var myChart = new Chart("myChart", {
+  type: "line",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgba(0,0,255,1)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+});</script>
     
     <link rel="icon" href="images/favicon.png">
     
@@ -29,7 +58,9 @@
     <meta property="og:title" content="Home">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  </head>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script></head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode"><header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-b9f7 u-header" id="sec-71bd"><div class="u-align-right u-container-style u-group u-hover-feature u-shape-round weather-container u-group-1">
         <div class="u-container-layout u-container-layout-1">
           <div class="u-align-right u-container-style u-expanded-width u-group u-shape-rectangle u-group-2">
@@ -201,9 +232,34 @@
                 </ul>
                 <div class="u-tab-content">
                   <div class="u-align-center u-container-style u-shape-rectangle u-tab-active u-tab-pane" id="tab-cc32" role="tabpanel" aria-labelledby="link-tab-cc32">
-                    <div class="u-container-layout u-valign-middle u-container-layout-20"></div>
+                    <div class="u-container-layout u-container-layout-20">
+                      <div class="u-clearfix u-custom-html u-custom-html-1">
+                        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                        <script> var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+    var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+        }]
+      },
+      options: {
+        legend: { display: false },
+        scales: {
+          yAxes: [{ ticks: { min: 6, max: 16 } }],
+        }
+      }
+    }); </script>
+                      </div>
+                    </div>
                   </div>
-                  <div class="u-container-style u-shape-rectangle u-tab-pane" id="tab-d0ba" role="tabpanel" aria-labelledby="link-tab-d0ba">
+                  <div class="u-align-left u-container-style u-shape-rectangle u-tab-pane" id="tab-d0ba" role="tabpanel" aria-labelledby="link-tab-d0ba">
                     <div class="u-container-layout u-container-layout-21"></div>
                   </div>
                   <div class="u-container-style u-shape-rectangle u-tab-pane" id="tab-9b6c" role="tabpanel" aria-labelledby="link-tab-9b6c">
