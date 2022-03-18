@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'whitneysemibold';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/whitneysemibold.otf);
-}@font-face {
   font-family: 'whitneybook';
   font-style: normal;
   font-weight: 400;
   src: url(fonts/whitneybook.otf);
+}@font-face {
+  font-family: 'whitneysemibold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/whitneysemibold.otf);
 }
