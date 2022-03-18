@@ -299,7 +299,6 @@
 .u-section-1 .u-group-19 {
   width: 1000px;
   min-height: 1147px;
-  height: auto;
   margin: -1147px 0 0 240px;
 }
 
@@ -309,7 +308,6 @@
 
 .u-section-1 .u-tabs-1 {
   min-height: 1135px;
-  height: auto;
   margin: 0;
 }
 
@@ -339,7 +337,6 @@
 }
 
 .u-section-1 .u-custom-html-1 {
-  height: auto;
   min-height: 357px;
   width: 916px;
   margin: 18px auto 0;
@@ -428,15 +425,16 @@
   .u-section-1 .u-group-19 {
     width: 940px;
     margin-left: 0;
-    height: auto;
   }
 
   .u-section-1 .u-tabs-1 {
+    height: auto;
     margin-right: initial;
     margin-left: initial;
   }
 
   .u-section-1 .u-custom-html-1 {
+    height: auto;
     width: 892px;
   }
 }
@@ -597,6 +595,9 @@
 }
 .weather-container {
 	max-width: 215px;
+}
+.u-body {
+	font-family: whitneybook;
 }@font-face {
   font-family: 'whitneymedium';
   font-style: normal;
@@ -612,4 +613,9 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/whitneysemibold.otf);
+}@font-face {
+  font-family: 'whitneylight';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/whitneylight.otf);
 }

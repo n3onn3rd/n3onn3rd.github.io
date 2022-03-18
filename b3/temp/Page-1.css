@@ -146,4 +146,14 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/whitneysemibold.otf);
+}@font-face {
+  font-family: 'whitneymedium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/whitneymedium.otf);
+}@font-face {
+  font-family: 'whitneylight';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/whitneylight.otf);
 }
