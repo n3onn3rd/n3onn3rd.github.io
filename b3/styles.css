@@ -54,14 +54,14 @@ footer {
     background-color: #292B2F;
 }
 
-#main {
+.main {
     position: fixed;
     top: 0px;
     width: 100%;
     height: 100vh;
 }
 
-#hlcon {
+.hlcon {
     position: fixed;
     top: 0;
     padding: calc((53px - 32px) / 2);
@@ -70,7 +70,7 @@ footer {
     cursor: pointer;
 }
 
-#hrcon {
+.hrcon {
     position: static;
     top: 0;
     right: 0;
@@ -80,13 +80,13 @@ footer {
     position: fixed;
 }
 
-#n3icon {
+.n3icon {
     padding-right: 3px;
     height: 32px;
     width: auto;
 }
 
-#n3name {
+.n3name {
     position: relative;
     top: 0;
     left: 0;
@@ -99,7 +99,7 @@ footer {
     line-height: 18px;
 }
 
-#n3tag {
+.n3tag {
     position: relative;
     top: -5px;
     left: 0;
@@ -112,7 +112,7 @@ footer {
     line-height: 13px;
 }
 
-#namecon {
+.namecon {
     position: fixed;
     top: 0;
     left: calc(50px - (26.5px - 1em));
@@ -122,7 +122,7 @@ footer {
     user-select: text;
 }
 
-#btn1 {
+.btn1 {
     border: none;
     background-color: #292B2F;
     color: #b9bbbe;
@@ -135,7 +135,7 @@ footer {
     cursor: pointer;
 }
 
-#btn1:hover {
+.btn1:hover {
     background-color: #292B2F;
     color: #dcddde;
 }
@@ -148,7 +148,7 @@ footer {
     height: calc(100% - 153px);
 }
 
-#proj {
+.proj {
     position: fixed;
     top: 53px;
     left: 0;
@@ -156,7 +156,7 @@ footer {
     background-color: #2F3136;
 }
 
-#body {
+.body {
     position: fixed;
     top: 53px;
     left: 257px;
@@ -168,7 +168,7 @@ footer {
     height: 32px;
 }
 
-#iconspan {
+.iconspan {
     position: relative;
     width: auto;
     height: 32px;
